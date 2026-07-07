@@ -55,7 +55,8 @@ To change any wording, edit **`src/lib/content.js`** — it drives every section
    `hello@thefridgevending.com` (placeholder in `content.js`). Once the real inbox
    exists, either update that address or wire the form to **Netlify Forms** /
    **Formspree** (see `handleSubmit` in `src/components/Contact.jsx`).
-3. **Supplier photos:** `machine-angle.png` (the hero render) plus
+3. **Supplier photos:** `machine-angle.png` (the hero render), `context-breakroom.jpg`
+   (the real break-room placement shot in the "Seeing Is Believing" section) plus
    `machine-mini / tall / double / 550 / 440 / 620s.png` are temporary placeholders
    pulled from the supplier (hahavending.com). **Replace with licensed/owned
    photography before public launch** — authorization pending. The client's own flat

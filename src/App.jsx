@@ -7,6 +7,7 @@ import Hero from './components/Hero'
 import StatsBand from './components/StatsBand'
 import StorySection from './components/StorySection'
 import Manifesto from './components/Manifesto'
+import RealPlacement from './components/RealPlacement'
 import OneLinerTicker from './components/OneLinerTicker'
 import PerfectFor from './components/PerfectFor'
 import ProductUniverse from './components/ProductUniverse'
@@ -40,6 +41,7 @@ export default function App() {
         <StorySection />
         <Manifesto />
         <PerfectFor />
+        <RealPlacement />
         <OneLinerTicker />
         <ProductUniverse />
         <HowItWorks />
