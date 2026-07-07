@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { BRAND, NAV_LINKS } from '../lib/content'
 import { scrollToId } from '../hooks/useSmoothScroll'
 import Icon from './ui/Icon'
-import AnimatedLogo from './ui/AnimatedLogo'
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -39,7 +38,13 @@ export default function Nav() {
             className="flex items-center gap-2.5 pl-1"
             aria-label="The Fridge Vending, home"
           >
-            <AnimatedLogo variant="full" tone="dark" size={30} />
+            <img
+              src="/assets/the-fridge-logo.png"
+              alt="The Fridge Vending"
+              className="h-9 w-auto md:h-10"
+              width="180"
+              height="44"
+            />
           </a>
 
           <div className="hidden items-center gap-1 lg:flex">

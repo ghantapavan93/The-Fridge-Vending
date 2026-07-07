@@ -1,7 +1,6 @@
 import { BRAND, NAV_LINKS } from '../lib/content'
 import { scrollToId } from '../hooks/useSmoothScroll'
 import Icon from './ui/Icon'
-import AnimatedLogo from './ui/AnimatedLogo'
 
 export default function Footer() {
   const go = (e, href) => {
@@ -13,7 +12,13 @@ export default function Footer() {
       <div className="container-x py-14">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div className="max-w-sm">
-            <AnimatedLogo variant="full" tone="light" size={38} />
+            <img
+              src="/assets/the-fridge-logo.png"
+              alt="The Fridge Vending"
+              className="h-11 w-auto brightness-0 invert"
+              width="200"
+              height="48"
+            />
             <p className="mt-5 text-sm text-white/60">
               {BRAND.tagline} AI smart vending machines placed in local businesses at no charge,
               customized around what your customers, employees, and residents actually want.
