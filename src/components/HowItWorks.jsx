@@ -33,14 +33,16 @@ export default function HowItWorks() {
       }
 
       steps.forEach((step) => {
+        // each step travels in from the side and sharpens as it scrolls up
         gsap.fromTo(
           step,
-          { autoAlpha: 0.35, y: 26 },
+          { x: 96, autoAlpha: 0, filter: 'blur(6px)' },
           {
+            x: 0,
             autoAlpha: 1,
-            y: 0,
-            duration: 0.6,
-            scrollTrigger: { trigger: step, start: 'top 78%', once: true },
+            filter: 'blur(0px)',
+            ease: 'power2.out',
+            scrollTrigger: { trigger: step, start: 'top 90%', end: 'top 56%', scrub: 0.6 },
           }
         )
         // "light up" the node as it hits centre
