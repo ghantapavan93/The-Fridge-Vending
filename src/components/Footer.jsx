@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="max-w-sm">
             <AnimatedLogo variant="full" tone="light" size={38} />
             <p className="mt-5 text-sm text-white/60">
-              {BRAND.tagline} AI smart vending machines placed in local businesses at no charge —
+              {BRAND.tagline} AI smart vending machines placed in local businesses at no charge,
               customized around what your customers, employees, and residents actually want.
             </p>
           </div>

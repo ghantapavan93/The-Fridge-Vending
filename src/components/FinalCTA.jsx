@@ -66,7 +66,7 @@ export default function FinalCTA() {
               className="mx-auto max-w-2xl text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl"
             />
             <p className="mx-auto mt-5 max-w-xl text-base text-white/75 md:text-lg">
-              The cold drink, the quick lunch, the little treat — all waiting right where your people
+              The cold drink, the quick lunch, the little treat, all waiting right where your people
               already are. Placement is free. The upside isn’t.
             </p>
             <div className="mt-9 flex flex-wrap justify-center gap-3">

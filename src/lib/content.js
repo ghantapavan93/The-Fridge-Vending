@@ -38,7 +38,7 @@ export const TAGLINES = {
   hero: 'Fresh Snacks, Cold Drinks, Happy Teams.',
   refresh: 'Refresh. Recharge. Perform.',
   options: [
-    'Cravings, met — instantly.',
+    'Cravings, met. Instantly.',
     'The break room, reinvented.',
     'Your space just got an upgrade. On us.',
     'Cold drinks. Fresh snacks. Zero effort.',
@@ -67,7 +67,7 @@ export const MANIFESTO = {
     { text: 'there should be a better way.', accent: false },
     { text: 'There is.', accent: true },
   ],
-  tail: 'Cold. Close. Already stocked with exactly what your people want — and it costs you nothing.',
+  tail: 'Cold. Close. Already stocked with exactly what your people want, and it costs you nothing.',
 }
 
 // Animated proof band.
@@ -80,9 +80,9 @@ export const STATS = [
 
 // The smart-vending flow (matches the callouts printed on the machine).
 export const FLOW = [
-  { k: 'Swipe or Tap', d: 'Unlock the door with a card or phone — no app, no fuss.', icon: 'phone' },
+  { k: 'Swipe or Tap', d: 'Unlock the door with a card or phone. No app, no fuss.', icon: 'phone' },
   { k: 'Grab Your Items', d: 'Take exactly what you want. Smart sensors do the rest.', icon: 'check' },
-  { k: 'Auto-Checkout in 60s', d: 'Close the door — you’re charged automatically. Done.', icon: 'bolt' },
+  { k: 'Auto-Checkout in 60s', d: 'Close the door and you’re charged automatically. Done.', icon: 'bolt' },
 ]
 
 export const NAV_LINKS = [
@@ -116,7 +116,7 @@ export const STOCK_CATEGORIES = [
     title: 'Energy & Bottled Drinks',
     icon: 'bolt',
     tint: 'var(--color-cherry-500)',
-    body: 'Energy drinks, bottled water, sparkling water, sodas, teas, juices, and sports drinks — ice-cold and ready to grab.',
+    body: 'Energy drinks, bottled water, sparkling water, sodas, teas, juices, and sports drinks, ice-cold and ready to grab.',
   },
   {
     title: 'Healthy Snacks',
@@ -140,7 +140,7 @@ export const STOCK_CATEGORIES = [
     title: 'Candy & Chips',
     icon: 'candy',
     tint: 'var(--color-sun-400)',
-    body: 'The classic favorites — chips, cookies, chocolate, and candy for when only a treat will do.',
+    body: 'The classic favorites: chips, cookies, chocolate, and candy for when only a treat will do.',
   },
   {
     title: 'Toys & Puzzles for Kids',
@@ -152,7 +152,7 @@ export const STOCK_CATEGORIES = [
     title: 'Everyday Convenience',
     icon: 'sparkle',
     tint: 'var(--color-sky-500)',
-    body: 'The mix flexes to your location — adjusted around what your customers, employees, and residents actually reach for.',
+    body: 'The mix flexes to your location, adjusted around what your customers, employees, and residents actually reach for.',
   },
 ]
 
@@ -165,7 +165,7 @@ export const STEPS = [
   {
     n: '02',
     title: 'We customize the product mix',
-    body: 'The selection is built around your space — energy drinks, healthy snacks, lunch items, kid-friendly products, or a mix of everything.',
+    body: 'The selection is built around your space: energy drinks, healthy snacks, lunch items, kid-friendly products, or a mix of everything.',
   },
   {
     n: '03',
@@ -231,7 +231,7 @@ export const AUDIENCES = [
     label: 'Apartment Communities',
     tint: 'var(--color-fresh-500)',
     headline: 'The amenity residents actually brag about.',
-    body: 'Give residents easy access to snacks, drinks, quick meals, and everyday favorites without leaving the property — an amenity that makes the community feel more convenient and modern.',
+    body: 'Give residents easy access to snacks, drinks, quick meals, and everyday favorites without leaving the property. A simple amenity that makes the community feel more convenient and modern.',
     points: [
       'Clubhouses',
       'Leasing offices',
@@ -245,7 +245,7 @@ export const AUDIENCES = [
     label: 'Employee Spaces',
     tint: 'var(--color-mango-500)',
     headline: 'Keep your team fueled without leaving the building.',
-    body: 'Break rooms and employee areas stay stocked with the cold drinks, quick meals, and snacks your people actually want — right where they work.',
+    body: 'Break rooms and employee areas stay stocked with the cold drinks, quick meals, and snacks your people actually want, right where they work.',
     points: [
       'Break rooms',
       'Warehouses & shops',

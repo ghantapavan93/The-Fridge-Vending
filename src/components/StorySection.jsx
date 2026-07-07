@@ -102,7 +102,7 @@ export default function StorySection() {
             <p className="mx-auto mt-5 max-w-2xl text-base text-ink/70 md:text-lg">
               Every location is different. A repair-shop waiting room, an apartment clubhouse, and an
               employee break area don’t need the same product mix. The Fridge is customized around
-              what people actually want — from cold drinks and healthy snacks to lunch items, small
+              what people actually want, from cold drinks and healthy snacks to lunch items, small
               toys, puzzles, and everyday favorites.
             </p>
           </div>

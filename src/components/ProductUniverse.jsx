@@ -53,7 +53,7 @@ export default function ProductUniverse() {
               className="text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl"
             />
             <p className="mx-auto mt-5 max-w-xl text-base text-white/70 md:text-lg">
-              From energy drinks to lunch boxes to a puzzle for a restless kid — every Fridge is
+              From energy drinks to lunch boxes to a puzzle for a restless kid. Every Fridge is
               built around the people using it. Hover to pause and pick a favorite.
             </p>
           </div>

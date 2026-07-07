@@ -163,7 +163,7 @@ export default function Hero() {
             gradient="linear-gradient(92deg,#243352,#2b4a7e,#243352)"
             start="top 95%"
             delay={0.9}
-            text="It lives in your waiting room, your clubhouse, your break room — stocked with exactly what your people want. Tap, grab, go. And it costs you nothing."
+            text="It lives in your waiting room, your clubhouse, your break room, stocked with exactly what your people want. Tap, grab, go. And it costs you nothing."
           />
 
           <div className="hero-cta mt-8 flex flex-wrap items-center gap-3">
@@ -193,7 +193,7 @@ export default function Hero() {
             <div className="absolute inset-x-6 bottom-4 -z-10 h-16 rounded-[50%] bg-navy-900/25 blur-2xl" />
             <img
               src="/assets/machine-angle.png"
-              alt="The Fridge — AI smart vending machine: swipe or tap, grab items, auto-checkout in 60 seconds"
+              alt="The Fridge AI smart vending machine: swipe or tap, grab items, auto-checkout in 60 seconds"
               className="w-full drop-shadow-[0_50px_70px_rgba(11,28,85,0.4)]"
               width="614"
               height="1024"

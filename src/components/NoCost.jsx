@@ -16,7 +16,7 @@ export default function NoCost() {
               className="text-3xl font-extrabold leading-tight text-navy-900 sm:text-4xl md:text-5xl"
             />
             <p className="mt-5 text-base text-ink/70 md:text-lg">
-              The Fridge is placed in your location at no charge — giving your space a more
+              The Fridge is placed in your location at no charge, giving your space a more
               convenient, modern experience without adding any extra work for your team.
             </p>
           </div>

@@ -37,7 +37,7 @@ export default function Nav() {
             href="#top"
             onClick={(e) => go(e, '#top')}
             className="flex items-center gap-2.5 pl-1"
-            aria-label="The Fridge Vending — home"
+            aria-label="The Fridge Vending, home"
           >
             <AnimatedLogo variant="full" tone="dark" size={30} />
           </a>

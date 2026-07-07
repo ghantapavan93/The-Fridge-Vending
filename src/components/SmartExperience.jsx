@@ -5,7 +5,7 @@ import Icon from './ui/Icon'
 
 const STEPS = [
   { k: 'Choose', d: 'Browse and pick from a fully stocked, glass-front fridge.' },
-  { k: 'Grab', d: 'Tap to unlock, take what you want — that simple.' },
+  { k: 'Grab', d: 'Tap to unlock, take what you want. That simple.' },
   { k: 'Enjoy', d: 'Fresh drinks, snacks, and meals, right when you need them.' },
   { k: 'Restocked around demand', d: 'The mix keeps improving based on what people reach for.' },
 ]
@@ -48,7 +48,7 @@ export default function SmartExperience() {
           />
           <p className="mt-5 text-base text-white/70 md:text-lg">
             The Fridge uses modern smart-vending technology to create a cleaner, faster, more
-            flexible grab-and-go experience than traditional vending — for your customers, your
+            flexible grab-and-go experience than traditional vending, for your customers, your
             team, and your residents.
           </p>
 
