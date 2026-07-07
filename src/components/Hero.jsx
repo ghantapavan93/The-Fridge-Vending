@@ -5,6 +5,7 @@ import { useMagnetic } from '../hooks/useMagnetic'
 import SplitHeading from './ui/SplitHeading'
 import RotatingCraving from './ui/RotatingCraving'
 import FrostParticles from './ui/FrostParticles'
+import AuroraBackground from './ui/AuroraBackground'
 import Icon from './ui/Icon'
 
 const CHIPS = [
@@ -111,9 +112,10 @@ export default function Hero() {
     >
       {/* Aurora / frost background */}
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_70%_-5%,#dcefff_0%,transparent_55%),radial-gradient(60%_50%_at_10%_15%,#e7fff2_0%,transparent_50%),linear-gradient(180deg,#ffffff_0%,#eef6ff_100%)]" />
-        <div className="hero-glow absolute right-[6%] top-[16%] h-[44rem] w-[44rem] rounded-full bg-[radial-gradient(circle,rgba(30,144,255,0.30),transparent_62%)] blur-2xl" />
-        <div className="hero-glow absolute left-[-6%] bottom-[-8%] h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,rgba(34,194,107,0.20),transparent_60%)] blur-2xl" />
+        <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_70%_-5%,#eef7ff_0%,transparent_55%),radial-gradient(60%_50%_at_10%_15%,#f0fff7_0%,transparent_50%),linear-gradient(180deg,#ffffff_0%,#eef6ff_100%)]" />
+        {/* 21st.dev / Aceternity aurora, re-tinted to brand */}
+        <AuroraBackground />
+        <div className="hero-glow absolute left-[-6%] bottom-[-8%] h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,rgba(34,194,107,0.18),transparent_60%)] blur-2xl" />
         <div
           className="absolute inset-0 opacity-[0.5]"
           style={{
