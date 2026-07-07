@@ -4,6 +4,7 @@ import { scrollToId } from '../hooks/useSmoothScroll'
 import { useMagnetic } from '../hooks/useMagnetic'
 import AnimatedGradientText from './ui/AnimatedGradientText'
 import Typewriter from './ui/Typewriter'
+import TextGenerate from './ui/TextGenerate'
 import RotatingCraving from './ui/RotatingCraving'
 import FrostParticles from './ui/FrostParticles'
 import AuroraBackground from './ui/AuroraBackground'
@@ -36,7 +37,6 @@ export default function Hero() {
         gsap.set('.hero-h1', { autoAlpha: 0, y: 22, filter: 'blur(10px)' })
         gsap.set('.hero-kinetic', { autoAlpha: 0, y: 18 })
         gsap.set('.hero-sub', { autoAlpha: 0, y: 20 })
-        gsap.set('.hero-support', { autoAlpha: 0, y: 20 })
         gsap.set('.hero-cta', { autoAlpha: 0, y: 20 })
         gsap.set('.hero-trust', { autoAlpha: 0, y: 16 })
         gsap.set(machineWrap.current, { autoAlpha: 0, y: 70, scale: 0.92, rotate: 1.5 })
@@ -52,7 +52,6 @@ export default function Hero() {
           .to('.hero-reflect', { autoAlpha: 0.5, scaleY: 1, duration: 1, ease: 'power2.out' }, '-=0.7')
           .to('.hero-kinetic', { autoAlpha: 1, y: 0, duration: 0.7 }, '-=1.0')
           .to('.hero-sub', { autoAlpha: 1, y: 0, duration: 0.7 }, '-=0.6')
-          .to('.hero-support', { autoAlpha: 1, y: 0, duration: 0.7 }, '-=0.5')
           .to('.hero-cta', { autoAlpha: 1, y: 0, duration: 0.7 }, '-=0.5')
           .to('.hero-trust', { autoAlpha: 1, y: 0, duration: 0.6 }, '-=0.5')
           .to(chipsRef.current, { autoAlpha: 1, scale: 1, y: 0, duration: 0.7, stagger: 0.08, ease: 'back.out(1.6)' }, '-=0.9')
@@ -158,16 +157,14 @@ export default function Hero() {
             />
           </p>
 
-          <p className="hero-support mt-4 max-w-lg text-base">
-            <AnimatedGradientText
-              as="span"
-              animate={false}
-              gradient="linear-gradient(100deg,#0e1630,#334155,#1e3a8a,#0e1630)"
-            >
-              It lives in your waiting room, your clubhouse, your break room — stocked with exactly
-              what your people want. Tap, grab, go. And it costs you nothing.
-            </AnimatedGradientText>
-          </p>
+          <TextGenerate
+            as="p"
+            className="mt-4 max-w-lg text-base font-medium"
+            gradient="linear-gradient(92deg,#243352,#2b4a7e,#243352)"
+            start="top 95%"
+            delay={0.9}
+            text="It lives in your waiting room, your clubhouse, your break room — stocked with exactly what your people want. Tap, grab, go. And it costs you nothing."
+          />
 
           <div className="hero-cta mt-8 flex flex-wrap items-center gap-3">
             <a
