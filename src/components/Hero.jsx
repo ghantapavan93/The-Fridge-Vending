@@ -2,7 +2,8 @@ import { useEffect, useRef } from 'react'
 import { gsap, ScrollTrigger, prefersReducedMotion } from '../lib/gsap'
 import { scrollToId } from '../hooks/useSmoothScroll'
 import { useMagnetic } from '../hooks/useMagnetic'
-import SplitHeading from './ui/SplitHeading'
+import AnimatedGradientText from './ui/AnimatedGradientText'
+import Typewriter from './ui/Typewriter'
 import RotatingCraving from './ui/RotatingCraving'
 import FrostParticles from './ui/FrostParticles'
 import AuroraBackground from './ui/AuroraBackground'
@@ -32,6 +33,7 @@ export default function Hero() {
 
       if (!reduce) {
         gsap.set('.hero-badge', { autoAlpha: 0, y: 16 })
+        gsap.set('.hero-h1', { autoAlpha: 0, y: 22, filter: 'blur(10px)' })
         gsap.set('.hero-kinetic', { autoAlpha: 0, y: 18 })
         gsap.set('.hero-sub', { autoAlpha: 0, y: 20 })
         gsap.set('.hero-support', { autoAlpha: 0, y: 20 })
@@ -44,7 +46,8 @@ export default function Hero() {
 
         const tl = gsap.timeline({ delay: 0.15 })
         tl.to('.hero-badge', { autoAlpha: 1, y: 0, duration: 0.6 })
-          .to('.hero-glow', { autoAlpha: 1, scale: 1, duration: 1.4, ease: 'power2.out' }, '-=0.3')
+          .to('.hero-h1', { autoAlpha: 1, y: 0, filter: 'blur(0px)', duration: 0.9, ease: 'power3.out' }, '-=0.25')
+          .to('.hero-glow', { autoAlpha: 1, scale: 1, duration: 1.4, ease: 'power2.out' }, '-=0.5')
           .to(machineWrap.current, { autoAlpha: 1, y: 0, scale: 1, rotate: 0, duration: 1.25, ease: 'power4.out' }, '-=1.2')
           .to('.hero-reflect', { autoAlpha: 0.5, scaleY: 1, duration: 1, ease: 'power2.out' }, '-=0.7')
           .to('.hero-kinetic', { autoAlpha: 1, y: 0, duration: 0.7 }, '-=1.0')
@@ -135,27 +138,35 @@ export default function Hero() {
             <Icon name="snowflake" size={15} /> AI Smart Vending · Placed at No Charge
           </span>
 
-          <SplitHeading
+          <AnimatedGradientText
             as="h1"
-            text="Get What You Want."
-            trigger="load"
-            delay={0.35}
-            accentWords={['Want.']}
-            className="text-5xl font-extrabold leading-[0.98] text-navy-900 sm:text-6xl md:text-7xl"
-          />
+            glow
+            duration={8}
+            className="hero-h1 text-5xl font-extrabold leading-[0.98] sm:text-6xl md:text-7xl"
+          >
+            Get What You Want.
+          </AnimatedGradientText>
 
           <p className="hero-kinetic mt-4 text-2xl font-bold sm:text-3xl">
             <RotatingCraving />
           </p>
 
-          <p className="hero-sub mt-5 text-lg font-medium text-navy-900/80 md:text-xl">
-            AI smart vending machines customized for your business, employees, customers, and
-            residents.
+          <p className="hero-sub mt-5 min-h-[3.5rem] text-lg font-medium text-navy-900/80 md:min-h-[3.75rem] md:text-xl">
+            <Typewriter
+              text="AI smart vending machines customized for your business, employees, customers, and residents."
+              startDelay={1300}
+            />
           </p>
 
-          <p className="hero-support mt-4 max-w-lg text-base text-ink/70">
-            It lives in your waiting room, your clubhouse, your break room — stocked with exactly
-            what your people want. Tap, grab, go. And it costs you nothing.
+          <p className="hero-support mt-4 max-w-lg text-base">
+            <AnimatedGradientText
+              as="span"
+              animate={false}
+              gradient="linear-gradient(100deg,#0e1630,#334155,#1e3a8a,#0e1630)"
+            >
+              It lives in your waiting room, your clubhouse, your break room — stocked with exactly
+              what your people want. Tap, grab, go. And it costs you nothing.
+            </AnimatedGradientText>
           </p>
 
           <div className="hero-cta mt-8 flex flex-wrap items-center gap-3">

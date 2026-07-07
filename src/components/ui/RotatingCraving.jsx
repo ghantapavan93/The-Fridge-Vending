@@ -50,10 +50,23 @@ export default function RotatingCraving() {
         <span
           ref={wordRef}
           className="inline-flex items-center gap-2 font-extrabold"
-          style={{ color: c.color, willChange: 'transform, opacity, filter' }}
+          style={{ willChange: 'transform, opacity, filter' }}
         >
           <span aria-hidden className="text-[0.8em]">{c.emoji}</span>
-          {c.word}
+          {/* flowing gradient from the craving's colour into brand blue */}
+          <span
+            style={{
+              backgroundImage: `linear-gradient(100deg, ${c.color}, #1e90ff, ${c.color})`,
+              backgroundSize: '220% auto',
+              WebkitBackgroundClip: 'text',
+              backgroundClip: 'text',
+              color: 'transparent',
+              WebkitTextFillColor: 'transparent',
+              animation: prefersReducedMotion() ? 'none' : 'gradientFlow 6s ease infinite',
+            }}
+          >
+            {c.word}
+          </span>
         </span>
       </span>
     </span>
