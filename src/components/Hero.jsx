@@ -134,7 +134,14 @@ export default function Hero() {
         {/* Copy */}
         <div className="hero-copy relative z-10 max-w-xl">
           <span className="hero-badge eyebrow mb-5">
-            <Icon name="snowflake" size={15} /> AI Smart Vending · Placed at No Charge
+            <Icon name="snowflake" size={15} />
+            <AnimatedGradientText
+              as="span"
+              gradient="linear-gradient(100deg,#1e90ff,#22d3ee,#0ea5e9,#22d3ee,#1e90ff)"
+              duration={5}
+            >
+              AI Smart Vending · Placed at No Charge
+            </AnimatedGradientText>
           </span>
 
           <AnimatedGradientText
@@ -159,8 +166,10 @@ export default function Hero() {
 
           <TextGenerate
             as="p"
-            className="mt-4 max-w-lg text-base font-medium"
-            gradient="linear-gradient(92deg,#243352,#2b4a7e,#243352)"
+            className="mt-4 max-w-lg text-base font-semibold"
+            gradient="linear-gradient(100deg,#0891b2,#16a34a,#0ea5e9,#16a34a,#0891b2)"
+            flow
+            flowDuration={7}
             start="top 95%"
             delay={0.9}
             text="It lives in your waiting room, your clubhouse, your break room, stocked with exactly what your people want. Tap, grab, go. And it costs you nothing."

@@ -18,7 +18,6 @@ export default function Typewriter({
 }) {
   const reduce = prefersReducedMotion()
   const [shown, setShown] = useState(reduce ? text : '')
-  const done = shown.length >= text.length
   const timers = useRef([])
 
   useEffect(() => {
@@ -49,8 +48,8 @@ export default function Typewriter({
       <span aria-hidden="true">{shown}</span>
       <span
         aria-hidden="true"
-        className={`ml-0.5 inline-block h-[0.95em] w-[2px] translate-y-[0.14em] rounded-full align-baseline ${caretClassName}`}
-        style={{ animation: reduce || !done ? 'none' : 'caretBlink 1s steps(1) infinite', opacity: reduce ? 0 : 1 }}
+        className={`ml-1 inline-block h-[1.05em] w-[3px] translate-y-[0.16em] rounded-full align-baseline ${caretClassName}`}
+        style={{ animation: reduce ? 'none' : 'caretBlink 1.05s steps(1) infinite', opacity: reduce ? 0 : 1 }}
       />
     </span>
   )
