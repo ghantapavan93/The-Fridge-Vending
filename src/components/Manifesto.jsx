@@ -53,10 +53,10 @@ export default function Manifesto() {
           {MANIFESTO.lines.map((l, i) => (
             <p
               key={i}
-              className={`mf-line font-display font-extrabold leading-[1.02] tracking-tight ${
+              className={`mf-line leading-[1.02] tracking-tight ${
                 l.accent
-                  ? 'mt-2 bg-gradient-to-r from-sky-300 to-fresh-400 bg-clip-text text-6xl text-transparent sm:text-7xl md:text-8xl'
-                  : 'text-4xl text-white/95 sm:text-5xl md:text-6xl'
+                  ? 'mt-3 bg-gradient-to-r from-sky-300 to-fresh-400 bg-clip-text font-serif text-7xl italic text-transparent sm:text-8xl md:text-9xl'
+                  : 'font-display text-4xl font-extrabold text-white/95 sm:text-5xl md:text-6xl'
               }`}
             >
               {l.text}
