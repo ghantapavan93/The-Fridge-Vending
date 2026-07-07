@@ -30,11 +30,12 @@
   --color-mist: #eef3fb;
   --color-line: #e4ebf6;
 
-  /* Type */
-  --font-display: 'Poppins', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+  /* Type — premium pairing: Clash Display + Satoshi, with an Instrument Serif accent */
+  --font-display: 'Clash Display', 'Poppins', ui-sans-serif, system-ui, -apple-system,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: 'Satoshi', 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
     Roboto, Helvetica, Arial, sans-serif;
-  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
-    Helvetica, Arial, sans-serif;
+  --font-serif: 'Instrument Serif', ui-serif, Georgia, 'Times New Roman', serif;
 
   /* Motion */
   --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
