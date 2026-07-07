@@ -16,11 +16,14 @@ export default function TextGenerate({
   as: Tag = 'p',
   className = '',
   gradient,
+  flow = false,
+  flowDuration = 6,
   stagger = 0.035,
   start = 'top 90%',
   delay = 0,
 }) {
   const ref = useRef(null)
+  const reduce = prefersReducedMotion()
   const words = text.split(' ')
 
   useEffect(() => {
@@ -55,11 +58,12 @@ export default function TextGenerate({
   const clip = gradient
     ? {
         backgroundImage: gradient,
-        backgroundSize: '200% auto',
+        backgroundSize: '220% auto',
         WebkitBackgroundClip: 'text',
         backgroundClip: 'text',
         color: 'transparent',
         WebkitTextFillColor: 'transparent',
+        animation: flow && !reduce ? `gradientFlow ${flowDuration}s ease infinite` : undefined,
       }
     : undefined
 
