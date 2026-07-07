@@ -177,13 +177,6 @@
     text-transform: uppercase;
     color: var(--color-sky-500);
   }
-  .eyebrow::before {
-    content: '';
-    width: 1.6rem;
-    height: 2px;
-    border-radius: 2px;
-    background: currentColor;
-  }
 
   /* Headline word-reveal (paired with JS split): each word clips itself and
      flows inline so the heading still wraps naturally. */

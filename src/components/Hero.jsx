@@ -133,12 +133,17 @@ export default function Hero() {
       <div className="container-x grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-6">
         {/* Copy */}
         <div className="hero-copy relative z-10 max-w-xl">
-          <span className="hero-badge eyebrow mb-5">
-            <Icon name="snowflake" size={15} />
+          <span className="hero-badge mb-5 inline-flex items-center gap-2.5 rounded-full border border-sky-500/25 bg-white/70 px-4 py-1.5 shadow-[0_10px_28px_-14px_rgba(30,144,255,0.55)] backdrop-blur">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-fresh-500 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-fresh-500" />
+            </span>
+            <Icon name="snowflake" size={14} className="text-sky-500" />
             <AnimatedGradientText
               as="span"
               gradient="linear-gradient(100deg,#1e90ff,#22d3ee,#0ea5e9,#22d3ee,#1e90ff)"
               duration={5}
+              className="text-xs font-semibold uppercase tracking-[0.16em]"
             >
               AI Smart Vending · Placed at No Charge
             </AnimatedGradientText>
