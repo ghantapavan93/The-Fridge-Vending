@@ -30,7 +30,7 @@ export default function Contact() {
     // No backend yet: open the visitor's email client with everything prefilled.
     // TODO: swap for a form endpoint (Netlify Forms / Formspree) once the
     // official inbox is live — see README.
-    const subject = encodeURIComponent(`Free Placement Request — ${form.business || form.name}`)
+    const subject = encodeURIComponent(`Free Placement Request: ${form.business || form.name}`)
     const body = encodeURIComponent(
       [
         `Name: ${form.name}`,
@@ -64,7 +64,7 @@ export default function Contact() {
             />
             <p className="mt-5 max-w-md text-base text-ink/70 md:text-lg">
               Share a few details and we’ll follow up with next steps. Placement is free, and there’s
-              no obligation — we’ll simply see if The Fridge is a good fit for your space.
+              no obligation. We’ll simply see if The Fridge is a good fit for your space.
             </p>
 
             <div className="mt-8 space-y-3">
@@ -162,6 +162,20 @@ export default function Contact() {
                   <button type="submit" className="btn btn-primary w-full !py-4">
                     Send Request <Icon name="arrow" size={18} />
                   </button>
+
+                  <div className="mt-1 flex items-center gap-3 rounded-2xl border border-line bg-cloud px-4 py-3">
+                    <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-sky-500/15 text-sky-500">
+                      <Icon name="phone" size={17} />
+                    </span>
+                    <p className="text-sm text-ink/75">
+                      Prefer to talk now? Call {BRAND.contactName}, {BRAND.contactTitle}, at{' '}
+                      <a href={BRAND.phoneHref} className="font-bold text-navy-900 hover:text-sky-500">
+                        {BRAND.phone}
+                      </a>
+                      .
+                    </p>
+                  </div>
+
                   <p className="text-center text-xs text-ink/50">
                     Free placement · No obligation · We reply within one business day.
                   </p>
